@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "570141481341",
+    "firebase_url": "https://notificationapp-79857.firebaseio.com",
+    "project_id": "notificationapp-79857",
+    "storage_bucket": "notificationapp-79857.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570141481341:android:346d66d56970efd4",
+        "android_client_info": {
+          "package_name": "com.example.enclaveit.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570141481341-5tuga0l84tbs2fj736umfcocl66l2fvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4kykL6eWqLWNJ3fSuiB2YKOdZXGeY3kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
