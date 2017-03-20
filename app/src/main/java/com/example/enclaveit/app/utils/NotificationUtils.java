@@ -31,40 +31,24 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by enclaveit on 15/03/2017.
- * Purpose: Create a class named NotificationUtils.java under utils package.
- * This class contains necessary functions required to show the message
- * (with title, message, image and timestamp) in notification tray
- */
-
 public class NotificationUtils {
-    /**
-     * To do show message on activity or wherever you want, you get destination Activity
-     * => Using context to connect to that Activity
-     */
+
     private Context mContext;
+    private static String TAG = NotificationUtils.class.getSimpleName();
 
     public NotificationUtils(Context context){
         this.mContext = context;
     }
 
-    /**
-     * To show NotificationMessage
-     * Include these cases:
-     * Case 1: There is a image to show
-     * Case 2: There isn't any image to show
-     * => Call image => Parent Class and no image is Child Class
-     */
     public void showNotificationMessage(String title, String message, String timeStamp, Intent intent){
+        /**
+         * When I process all of parameters that is transferred
+         * I want to don't change all of attributes in method than I set all of them is final
+         */
         showNotificationMessage(title,message,timeStamp,intent,null);
     }
 
     public void showNotificationMessage(final String title, final String message, final String timeStamp, final Intent intent, String imageUrl){
-        /**
-         * Think function or method to add or update one or more object to database.
-         * => You need to check validate all of field or parameters before excute
-         */
         if(TextUtils.isEmpty(message)){
             return; // stop program
         }

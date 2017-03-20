@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pending_intent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.enclaveit.app.activities.ActivityPendingIntent">
+    <TextView
+        android:id="@+id/txt"
+        android:text="Show Notification"
+        android:textSize="36dp"
+        android:textColor="#A1A1F1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
