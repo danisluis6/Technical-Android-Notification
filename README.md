@@ -204,7 +204,32 @@
 # Final Keyword in method paramaters
   - Java always makes a copy of parameters before sending them to methods. This means the final doesn't mean any difference for the calling code. This only means that inside the method the variables can not be reassigned. (note that if you have a final object, you can still change the attributes of the object).
   
+# Service
+# MyFirebaseInstanceIDService
+  - MyFirebaseInstanceIDService [UI of Firebase Website => Client and Server => We put notification into client and server process automation]
+  - Structure of message: <a href="http://i.imgur.com/h5VYs8s.png" target="_blank">Structure of Notification</a>
+    - ID Token is "Kf9zCHUgSQn6vK83GzJ"
+    - Fields of school: title, content, ...
+    
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [[... ID Token ...]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [... ID Token ...]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [... ID Token ...]]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [ storeRegIdInPref(refreshedToken) [... ID Token ...]]]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [ storeRegIdInPref(refreshedToken) [... ID Token ...]]]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [ new Intent() [... ID Token ...]]]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [ new Intent() [ .putExtra() [... ID Token ...]]]]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [ new Intent() [ .putExtra() [... ID Token ...]]]]]]
   
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ FirebaseInstanceId.getInstance().getToken() [ --- [ --- [... ID Token ...]]]]]]
+  - [ MyFirebaseInstanceIDService.class.getSimpleName() [ onTokenRefresh() [ LocalBroadcastManager.getInstance(this).sendBroadcast() [ --- [ --- [... ID Token ...]]]]]]
+  => LocalBroadcastManager.getInstance() include Intent and data of Intent.
+  
+# Server
+# MyFirebaseInstanceMessageService
+  - 
+  
+  
+    
   
  
     
