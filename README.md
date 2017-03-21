@@ -185,7 +185,21 @@
 # NotificationUtils
   - [[[[[[ .... Message .... ]]]]]]
   - [ Activity.class.getSimpleName() [[[[[ .... Message .... ]]]]]]
-  ##showNotificationMessage
+  
+  - showNotificationMessage
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [[[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ validate message [[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ validate message [ [[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ new Intent().setFlags [[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ PendingIntent.getActivity() [[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ new NotificationCompat.Builder [[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ Uri.parse(Path of music) [[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ validateImageURL [[[ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ validateImageURL [ choose - ImageURL [[ .... Message .... ]]]]]]
+      - [ Activity.class.getSimpleName() [ showNotificationMessage [ validateImageURL [ choose - ImageURL [ showBigNotification() [ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ validateImageURL [ choose - Icon [[ .... Message .... ]]]]]]
+      - [ Activity.class.getSimpleName() [ showNotificationMessage [ validateImageURL [ choose - Icon [ showSmallNotification() [ .... Message .... ]]]]]]
+    - [ Activity.class.getSimpleName() [ showNotificationMessage [ validateImageURL [ playNotificationSound() [[ .... Message .... ]]]]]]
  
 # Final Keyword in method paramaters
   - Java always makes a copy of parameters before sending them to methods. This means the final doesn't mean any difference for the calling code. This only means that inside the method the variables can not be reassigned. (note that if you have a final object, you can still change the attributes of the object).
